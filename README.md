@@ -48,8 +48,6 @@ uv run ruff check
 ### Health
 - `GET /health` — Проверка статуса сервера
 
-## Демо
-
 ## Скриншоты
 
 Все скриншоты— в `docs/screenshots/`. Регистрация сделана на `dinasdrv@gmail.com`, email видно на каждом.
@@ -75,7 +73,7 @@ uv run ruff check
 ### История — `GET /chat/history`
 
 `GET /chat/history` — получение истории:
-![GET /chat/history](docs/screenshots/07_get_history.png)
+![GET /chat/history](docs/screenshots/07_get_chat.png)
 
 ### Очистка — `DELETE /chat/history`
 
