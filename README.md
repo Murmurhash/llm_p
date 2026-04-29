@@ -2,34 +2,6 @@
 
 FastAPI-сервис с JWT-аутентификацией, SQLite и проксированием запросов к LLM через OpenRouter.
 
-## Стек
-
-- FastAPI + Uvicorn
-- SQLAlchemy 2.0 async + aiosqlite (чтобы всё было на `async/await`)
-- python-jose для JWT, passlib[bcrypt] для паролей
-- httpx для похода в OpenRouter
-- uv как пакетный менеджер, ruff для линтинга
-
-## Структура файлов
-
-```
-app/
-├── main.py              # create_app(), /health, lifespan
-├── core/
-│   ├── config.py        # настройки из .env
-│   ├── security.py      # JWT + хэш пароля
-│   └── errors.py        # свои исключения
-├── db/
-│   ├── base.py
-│   ├── session.py
-│   └── models.py        # User, ChatMessage
-├── schemas/             # Pydantic-схемы запросов/ответов
-├── repositories/        # работа с БД, голый SQL/ORM
-├── services/
-│   └── openrouter_client.py
-├── usecases/            # логика: auth, chat
-└── api/                 # роуты + DI
-
 
 ## Установка и запуск
 
