@@ -73,7 +73,7 @@ uv run ruff check
 ### История — `GET /chat/history`
 
 `GET /chat/history` — получение истории:
-![GET /chat/history](docs/screenshots/07_get_chat.png)
+![GET /chat/history](docs/screenshots/06_get_chat.png)
 
 ### Очистка — `DELETE /chat/history`
 
