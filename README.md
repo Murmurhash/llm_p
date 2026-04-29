@@ -54,7 +54,10 @@ uv run ruff check
 
 ### Регистрация — `POST /auth/register`
 
+`POST /auth/register` — запрос:
 ![Register request](docs/screenshots/01_register_request.png)
+
+`POST /auth/register` — ответ:
 ![Register response](docs/screenshots/02_register_response.png)
 
 ### Логин — `POST /auth/login`
